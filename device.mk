@@ -110,6 +110,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlay
 
+# Product
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
