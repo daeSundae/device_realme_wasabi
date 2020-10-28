@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 # ImsInit hack
 PRODUCT_PACKAGES += \
     ImsInit
-    
+
 # Init
 PRODUCT_PACKAGES += \
     init.mt6785.rc \
@@ -109,6 +109,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Overlays -- replace official
 PRODUCT_PACKAGES += \
     FrameworkResOverlay
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
