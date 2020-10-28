@@ -30,6 +30,9 @@ TARGET_INCLUDE_WIFI_EXT := true
 EVO_MAINTAINER := TheMalachite
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit Google Play System Update stuff
+$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_wasabi
 PRODUCT_DEVICE := wasabi
